@@ -77,4 +77,6 @@ RUN cd SRI-CSL-sally*/build && \
     make -j && \
     make install
 
-
+RUN useradd -m solvers && chown -R solvers:solvers /home/solvers
+USER solvers
+WORKDIR /home/solvers
