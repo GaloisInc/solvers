@@ -1,0 +1,23 @@
+This repository contains a `docker` image which contains a bunch of
+formal method tools, packaged conveniently together.
+
+To build the image use:
+
+    ./build
+
+Once the image is built, you can run solvers using:
+
+    ./run SOLVER OPTIONS
+
+To just start a shell in the `docker` image use:
+
+    ./run
+
+Currently we install the following solvers:
+  * Z3        4.8.8
+  * Yices     2.6.2
+  * CVC4      1.8
+  * abc       (github master)
+  * Boolector 3.2.1
+  * OpenSMT   (github master)
+  * Sally     (master)
